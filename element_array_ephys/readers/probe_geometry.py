@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from typing import List
 
 """
 Geometry definition for Neuropixels probes
@@ -160,7 +161,7 @@ def build_electrode_layouts(
     shank_spacing: float = None,
     y_origin="bottom",
     as_dataframe=False,
-) -> list[dict]:
+) -> List[dict]:
     """Builds electrode layouts.
 
     Args:
